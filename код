@@ -1,0 +1,16 @@
+cost = 0
+ticket = int(input("Введите количество билетов:\n "))
+for age in range (ticket):
+    age = int(input("Введите возраст:\n "))
+    if age < 18:
+        cost += 0
+    elif 18 <= age <=25:
+        cost += 990
+    elif age > 25:
+        cost += 1390
+    if ticket > 3:
+         print ("К оплате с учетом скидки", (cost - (cost *0.1)), "руб")
+    if ticket < 4:
+         print("К оплате", cost , "руб")
+if cost == 0 :
+     print("Приходите бесплатно!!!!")
